@@ -197,7 +197,7 @@ void EastTrails();
 void Mountainside(); //Key 5
 void FieldofDeath();
 void ForestofDarkness(); //Key 6
-
+void cls(); //Clear Screen
 
 
 
@@ -210,7 +210,7 @@ int main()
 
 	do
 	{
-		system("CLS");
+		cls();
 		cout<<"                 "<<"Dungeon Quest III: Torn Dreams\n";
 		cout<<"\n";
 		cout<<"Choose Your Destiny\n";
@@ -246,7 +246,7 @@ int main()
 	}
 	while (neworload!=3);
 	
-	system("CLS");
+	cls();
 	cout<<"Thank you for playing Dungeon Quest III\n";
 	cout<<"Produced by: James Montemagno and Jason Sauppe\n";
 	cout<<"Copyright 2005 CodeWarriors. All Rights Reserved.\n";
@@ -271,7 +271,7 @@ void overworld()
 		{
 			if( ((progress[1]==1) || (progress[1]==2)) && ((progress[2]==1) || (progress[2]==2)) && ((progress[3]==1) || (progress[3]==2)) && ((progress[4]==1) || (progress[4]==2)) && ((progress[5]==1) || (progress[5]==2)) && ((progress[6]==1) || (progress[6]==2)) )
 			{
-				system("CLS");
+				cls();
 				cout<<"Conclusion: The End is Near\n";
 				cout<<"---------------------------\n";
 				cout<<"Duke Vlad: "<<charname[1]<<", you have freed Neutria from the evil\n";
@@ -284,7 +284,7 @@ void overworld()
 				gold=gold+100000;
 				cout<<"Press 1 to continue: ";
 				cin>>one;
-				system("CLS");
+				cls();
 				cout<<"Conclusion: The End is Near\n";
 				cout<<"---------------------------\n";
 				cout<<"With your journey coming to an end, you are now content with yourself.\n";
@@ -293,7 +293,7 @@ void overworld()
 				cout<<"\n";
 				cout<<"Press 1 to continue: ";
 				cin>>one;
-				system("CLS");
+				cls();
 				cout<<"Congratulations for finishing Dungeon Quest III: Torn Dreams.\n";
 				cout<<"On behalf of the development team. Thank you.\n";
 				cout<<"\n";
@@ -324,7 +324,7 @@ void overworld()
 
 		if (neworload!=2)
 		{
-		system("CLS");
+		cls();
 		cout<<"Neutria\n";
 		towncheck=0;
 		overworldlocation();
@@ -468,7 +468,7 @@ void Lille()
 {
 	if (progress[0]==0)
 	{
-		system("CLS");
+		cls();
 		cout<<charname[2]<<": We first must travel to Karas.\n";
 		cout<<charname[2]<<": My lord will explain the situation.\n";
 		cout<<charname[2]<<": It is marked with a K on your map.\n";
@@ -483,7 +483,7 @@ void Lille()
 
 	do
 	{
-		system("CLS");
+		cls();
 		cout<<"   -----------\n";
 		cout<<"  *   Lille   *\n";
 		cout<<"   -----------\n";
@@ -503,7 +503,7 @@ void Lille()
 		cin>>townpick;
 		if(townpick==1)
 		{		
-				system("CLS");
+				cls();
 				cout<<"   -----------------------\n";
 				cout<<"  *   Lady Kyra's Castle  *\n";
 				cout<<"   -----------------------\n";
@@ -561,7 +561,7 @@ void Lille()
 		{
 			do
 			{
-				system("CLS");
+				cls();
 				cout<<"  ----------\n";
 				cout<<" * Townsfolk *\n";
 				cout<<"  ----------\n";
@@ -572,7 +572,7 @@ void Lille()
 				cin>>folkpick;
 				if(folkpick==1)
 				{
-					system("CLS");
+					cls();
 					cout<<"  ----------------------------\n";
 					cout<<" * Perhala: the Mighty Wizard *\n";
 					cout<<"  ----------------------------\n";
@@ -585,7 +585,7 @@ void Lille()
 				}
 				else if (folkpick==2)
 				{
-					system("CLS");
+					cls();
 					cout<<"  ---------------------\n";
 					cout<<" * Sauppe: the Warrior *\n";
 					cout<<"  ---------------------\n";
@@ -607,7 +607,7 @@ void Lille()
 		{
 			do
 			{
-				system("CLS");
+				cls();
 				cout<<"  ----------------\n";
 				cout<<" * Lille Dungeons *\n";
 				cout<<"  ----------------\n";
@@ -622,7 +622,7 @@ void Lille()
 				}
 				else if(dungeonchoice==2)
 				{
-					system("CLS");
+					cls();
 					cout<<"Tip:\n";
 					cout<<"To find the boss in the dungeon, you must search your surroundings.\n";
 					cout<<"\n";
@@ -630,7 +630,7 @@ void Lille()
 					cin>>one;
 					if(key[4]==0)
 					{	
-						system("CLS");
+						cls();
 						cout<<"The Tomb of Tslor is locked, an emblem of a desert\n";
 						cout<<"is carved into the door, next to the key hole.\n";
 						cout<<"Find the key to enter the Tomb of Tslor, then return.\n";
@@ -679,7 +679,7 @@ void Karas()
 		}
 
 
-		system("CLS");
+		cls();
 		cout<<"   -----------\n";
 		cout<<"  *   Karas   *\n";
 		cout<<"   -----------\n";
@@ -700,7 +700,7 @@ void Karas()
 		if(townpick==1)
 		{
 			//progress 2
-				system("CLS");
+				cls();
 				cout<<"   -----------------------\n";
 				cout<<"  *   Duke Vlad's Castle  *\n";
 				cout<<"   -----------------------\n";
@@ -761,7 +761,7 @@ void Karas()
 		{
 			do
 			{
-				system("CLS");
+				cls();
 				cout<<"  ----------\n";
 				cout<<" * Townsfolk *\n";
 				cout<<"  ----------\n";
@@ -772,7 +772,7 @@ void Karas()
 				cin>>folkpick;
 				if(folkpick==1)
 				{
-					system("CLS");
+					cls();
 					cout<<"  ------------------------\n";
 					cout<<" * Condon: the Apprentice *\n";
 					cout<<"  ------------------------\n";
@@ -787,7 +787,7 @@ void Karas()
 				}
 				else if (folkpick==2)
 				{
-					system("CLS");
+					cls();
 					cout<<"  ---------------------\n";
 					cout<<" * Mansfield: Retired Blacksmith *\n";
 					cout<<"  ---------------------\n";
@@ -807,7 +807,7 @@ void Karas()
 		{
 			do
 			{
-				system("CLS");
+				cls();
 				cout<<"  ----------------\n";
 				cout<<" * Karas Dungeons *\n";
 				cout<<"  ----------------\n";
@@ -822,7 +822,7 @@ void Karas()
 				}
 				else if(dungeonchoice==2)
 				{
-					system("CLS");
+					cls();
 					cout<<"Tip:\n";
 					cout<<"To find the boss in the dungeon, you must search your surroundings.\n";
 					cout<<"\n";
@@ -831,7 +831,7 @@ void Karas()
 
 					if(key[2]==0)
 					{	
-						system("CLS");
+						cls();
 						cout<<"The Cavern of the Lost is locked, an emblem of a path\n";
 						cout<<"is carved into the door, next to the key hole.\n";
 						cout<<"Find the key to enter the Cavern of the Lost, then return.\n";
@@ -870,7 +870,7 @@ void Briex()
 {
 	if (progress[0]==0)
 	{
-		system("CLS");
+		cls();
 		cout<<charname[2]<<": We first must travel to Karas.\n";
 		cout<<charname[2]<<": My lord will explain the situation.\n";
 		cout<<charname[2]<<": It is marked with a K on your map.\n";
@@ -883,7 +883,7 @@ void Briex()
 	{
 	do
 	{
-		system("CLS");
+		cls();
 		cout<<"   -----------\n";
 		cout<<"  *   Briex   *\n";
 		cout<<"   -----------\n";
@@ -904,7 +904,7 @@ void Briex()
 		if(townpick==1)
 		{
 			//progress 3
-			system("CLS");
+			cls();
 				cout<<"   -------------------------\n";
 				cout<<"  *   Lord Trieux's Castle  *\n";
 				cout<<"   -------------------------\n";
@@ -962,7 +962,7 @@ void Briex()
 		{
 			do
 			{
-				system("CLS");
+				cls();
 				cout<<"  ----------\n";
 				cout<<" * Townsfolk *\n";
 				cout<<"  ----------\n";
@@ -973,7 +973,7 @@ void Briex()
 				cin>>folkpick;
 				if(folkpick==1)
 				{
-					system("CLS");
+					cls();
 					cout<<"  -----------------------\n";
 					cout<<" * Cheriyan: Local Nurse *\n";
 					cout<<"  -----------------------\n";
@@ -987,7 +987,7 @@ void Briex()
 				}
 				else if (folkpick==2)
 				{
-					system("CLS");
+					cls();
 					cout<<"  ------------------------------\n";
 					cout<<" * Frachenzio: Italian Merchant *\n";
 					cout<<"  ------------------------------\n";
@@ -1000,7 +1000,7 @@ void Briex()
 					cin>>one;
 					if (one==131514525)
 					{
-						system("CLS");
+						cls();
 						cout<<"Frachenzio: You have broken my code, congratulations!\n";
 						cout<<"Frachenzio: As a reward, 10,000 G!\n";
 						cout<<"\n";
@@ -1019,7 +1019,7 @@ void Briex()
 
 			do
 			{
-				system("CLS");
+				cls();
 				cout<<"  ----------------\n";
 				cout<<" * Briex Dungeons *\n";
 				cout<<"  ----------------\n";
@@ -1034,7 +1034,7 @@ void Briex()
 				}
 				else if(dungeonchoice==2)
 				{
-					system("CLS");
+					cls();
 					cout<<"Tip:\n";
 					cout<<"To find the boss in the dungeon, you must search your surroundings.\n";
 					cout<<"\n";
@@ -1042,7 +1042,7 @@ void Briex()
 					cin>>one;
 					if(key[3]==0)
 					{	
-						system("CLS");
+						cls();
 						cout<<"The Gateway to the NetherWorld is locked, an emblem of a tomb\n";
 						cout<<"is carved into the door, next to the key hole.\n";
 						cout<<"Find the key to enter the Gateway to the NetherWorld, then return.\n";
@@ -1079,7 +1079,7 @@ void Ulm()
 {
 	if (progress[0]==0)
 	{
-		system("CLS");
+		cls();
 		cout<<charname[2]<<": We first must travel to Karas.\n";
 		cout<<charname[2]<<": My lord will explain the situation.\n";
 		cout<<charname[2]<<": It is marked with a K on your map.\n";
@@ -1092,7 +1092,7 @@ void Ulm()
 	{
 	do
 	{
-		system("CLS");
+		cls();
 		cout<<"   ---------\n";
 		cout<<"  *   Ulm   *\n";
 		cout<<"   ---------\n";
@@ -1113,7 +1113,7 @@ void Ulm()
 		if(townpick==1)
 		{
 			//progress 5
-			system("CLS");
+			cls();
 				cout<<"   -------------------\n";
 				cout<<"  *   Sir Ferchenzio  *\n";
 				cout<<"   -------------------\n";
@@ -1176,7 +1176,7 @@ void Ulm()
 		{
 			do
 			{
-				system("CLS");
+				cls();
 				cout<<"  ----------\n";
 				cout<<" * Townsfolk *\n";
 				cout<<"  ----------\n";
@@ -1187,7 +1187,7 @@ void Ulm()
 				cin>>folkpick;
 				if(folkpick==1)
 				{
-					system("CLS");
+					cls();
 					cout<<"  -----------------\n";
 					cout<<" * Weaver: Chemist *\n";
 					cout<<"  -----------------\n";
@@ -1201,7 +1201,7 @@ void Ulm()
 				}
 				else if (folkpick==2)
 				{
-					system("CLS");
+					cls();
 					cout<<"  -------------------\n";
 					cout<<" * Graham: Blackbelt *\n";
 					cout<<"  -------------------\n";
@@ -1222,7 +1222,7 @@ void Ulm()
 		{
 			do
 			{
-				system("CLS");
+				cls();
 				cout<<"  --------------\n";
 				cout<<" * Ulm Dungeons *\n";
 				cout<<"  --------------\n";
@@ -1237,7 +1237,7 @@ void Ulm()
 				}
 				else if(dungeonchoice==2)
 				{
-					system("CLS");
+					cls();
 					cout<<"Tip:\n";
 					cout<<"To find the boss in the dungeon, you must search your surroundings.\n";
 					cout<<"\n";
@@ -1245,7 +1245,7 @@ void Ulm()
 					cin>>one;
 					if(key[5]==0)
 					{	
-						system("CLS");
+						cls();
 						cout<<"The Mountainside is locked, an emblem of a trail\n";
 						cout<<"is carved into the door, next to the key hole.\n";
 						cout<<"Find the key to enter the Mountainside, then return.\n";
@@ -1282,7 +1282,7 @@ void Trevia()
 {
 	if (progress[0]==0)
 	{
-		system("CLS");
+		cls();
 		cout<<charname[2]<<": We first must travel to Karas.\n";
 		cout<<charname[2]<<": My lord will explain the situation.\n";
 		cout<<charname[2]<<": It is marked with a K on your map.\n";
@@ -1295,7 +1295,7 @@ void Trevia()
 	{
 	do
 	{
-		system("CLS");
+		cls();
 		cout<<"   ------------\n";
 		cout<<"  *   Trevia   *\n";
 		cout<<"   ------------\n";
@@ -1316,7 +1316,7 @@ void Trevia()
 		if(townpick==1)
 		{
 			//progress 6
-			system("CLS");
+			cls();
 				cout<<"   -------------------------\n";
 				cout<<"  *   King Sigurd's Castle  *\n";
 				cout<<"   -------------------------\n";
@@ -1374,7 +1374,7 @@ void Trevia()
 		{
 			do
 			{
-				system("CLS");
+				cls();
 				cout<<"  ----------\n";
 				cout<<" * Townsfolk *\n";
 				cout<<"  ----------\n";
@@ -1385,7 +1385,7 @@ void Trevia()
 				cin>>folkpick;
 				if(folkpick==1)
 				{
-					system("CLS");
+					cls();
 					cout<<"  ----------------------------\n";
 					cout<<" * Goodfellow: the Troubadour *\n";
 					cout<<"  ----------------------------\n";
@@ -1399,7 +1399,7 @@ void Trevia()
 				}
 				else if (folkpick==2)
 				{
-					system("CLS");
+					cls();
 					cout<<"  -------------------------\n";
 					cout<<" * Aloi: The Mathematician *\n";
 					cout<<"  -------------------------\n";
@@ -1418,7 +1418,7 @@ void Trevia()
 		{
 			do
 			{
-				system("CLS");
+				cls();
 				cout<<"  -----------------\n";
 				cout<<" * Trevia Dungeons *\n";
 				cout<<"  -----------------\n";
@@ -1433,7 +1433,7 @@ void Trevia()
 				}
 				else if(dungeonchoice==2)
 				{
-					system("CLS");
+					cls();
 					cout<<"Tip:\n";
 					cout<<"To find the boss in the dungeon, you must search your surroundings.\n";
 					cout<<"\n";
@@ -1441,7 +1441,7 @@ void Trevia()
 					cin>>one;
 					if(key[6]==0)
 					{	
-						system("CLS");
+						cls();
 						cout<<"The Forest of Darkness is locked, an emblem of grass\n";
 						cout<<"is carved into the door, next to the key hole.\n";
 						cout<<"Find the key to enter the Forest of Darkness, then return.\n";
@@ -1479,7 +1479,7 @@ void Rien()
 {
 	if (progress[0]==0)
 	{
-		system("CLS");
+		cls();
 		cout<<charname[2]<<": We first must travel to Karas.\n";
 		cout<<charname[2]<<": My lord will explain the situation.\n";
 		cout<<charname[2]<<": It is marked with a K on your map.\n";
@@ -1492,7 +1492,7 @@ void Rien()
 	{
 	do
 	{
-		system("CLS");
+		cls();
 		cout<<"   ----------\n";
 		cout<<"  *   Rien   *\n";
 		cout<<"   ----------\n";
@@ -1513,7 +1513,7 @@ void Rien()
 		if(townpick==1)
 		{
 			//progress 1
-			system("CLS");
+			cls();
 				cout<<"   -----------------------\n";
 				cout<<"  *   King James' Castle  *\n";
 				cout<<"   -----------------------\n";
@@ -1574,7 +1574,7 @@ void Rien()
 
 			do
 			{
-				system("CLS");
+				cls();
 				cout<<"  ----------\n";
 				cout<<" * Townsfolk *\n";
 				cout<<"  ----------\n";
@@ -1585,7 +1585,7 @@ void Rien()
 				cin>>folkpick;
 				if(folkpick==1)
 				{
-					system("CLS");
+					cls();
 					cout<<"  ---------------------\n";
 					cout<<" * Gill: The Fisherman *\n";
 					cout<<"  ---------------------\n";
@@ -1598,7 +1598,7 @@ void Rien()
 				}
 				else if (folkpick==2)
 				{
-					system("CLS");
+					cls();
 					cout<<"  -------------------------\n";
 					cout<<" * Harrington: The Peasant *\n";
 					cout<<"  -------------------------\n";
@@ -1618,7 +1618,7 @@ void Rien()
 		{
 			do
 			{
-				system("CLS");
+				cls();
 				cout<<"  ----------------\n";
 				cout<<" * Rien Dungeons *\n";
 				cout<<"  ----------------\n";
@@ -1633,7 +1633,7 @@ void Rien()
 				}
 				else if(dungeonchoice==2)
 				{
-					system("CLS");
+					cls();
 					cout<<"Tip:\n";
 					cout<<"To find the boss in the dungeon, you must search your surroundings.\n";
 					cout<<"\n";
@@ -1641,7 +1641,7 @@ void Rien()
 					cin>>one;
 					if(key[1]==0)
 					{	
-						system("CLS");
+						cls();
 						cout<<"The Hidden Everglades are locked, an emblem of a swamp\n";
 						cout<<"are carved into the door, next to the key hole.\n";
 						cout<<"Find the key to enter the Hidden Everglades, then return.\n";
@@ -1683,7 +1683,7 @@ void Inn()
 {
 	do
 	{
-	 system("CLS");
+	 cls();
 	 if(towncheck==1)
 	 {
 		 cout<<"  -------------------------      -------------\n";
@@ -1745,7 +1745,7 @@ void Inn()
 		 cin>>innchoice;
 		 if(innchoice==1)
 		 {
-			 system("CLS");
+			 cls();
 			 if(towncheck==1)
 			 {
 				
@@ -1967,7 +1967,7 @@ void Inn()
 
 
 
-			system("CLS");
+			cls();
 			cout<<"Your progress has been saved\n";
 			cout<<"\n";
 			cout<<"Press 1 to return to the hotel front desk: ";
@@ -2002,7 +2002,7 @@ void bsLille()
 {
 	do
 	{
-	   system("CLS");
+	   cls();
 	   cout<<"  -----------------------\n";
 	   cout<<" * Wagner the Blacksmith *\n";
 	   cout<<"  -----------------------\n";
@@ -2025,7 +2025,7 @@ void bsLille()
 
 		   do
 		   {
-			system("CLS");
+			cls();
 			cout<<"  -----------------------      -------------\n";
 			cout<<" * Wagner the Blacksmith *     Gold: "<<gold<<"\n";
 			cout<<"  -----------------------      -------------\n";
@@ -2046,7 +2046,7 @@ void bsLille()
 			{	
 				    if (charclass[i]==6)
 					{
-						system("CLS");
+						cls();
 						if(level[i]>=15)
 						{
 							if(weapon[i]==17)
@@ -2099,7 +2099,7 @@ void bsLille()
 					}
 					else if(charclass[i]!=6)
 					{
-						system("CLS");
+						cls();
 						cout<<"BS: You can not purchase that item for that class.\n";
 						cout<<"\n";
 						cout<<"Press 1 to continue: ";
@@ -2111,7 +2111,7 @@ void bsLille()
 			{	
 				    if (charclass[i]==6)
 					{
-						system("CLS");
+						cls();
 						if(level[i]>=15)
 						{
 							if(armor[i]==17)
@@ -2164,7 +2164,7 @@ void bsLille()
 					}
 					else if(charclass[i]!=6)
 					{
-						system("CLS");
+						cls();
 						cout<<"BS: You can not purchase that item for that class.\n";
 						cout<<"\n";
 						cout<<"Press 1 to continue: ";
@@ -2194,7 +2194,7 @@ void bsKaras()
 {
 	do
 	{
-	   system("CLS");
+	   cls();
 	   cout<<"  -----------------------\n";
 	   cout<<" * Helmer the Blacksmith *\n";
 	   cout<<"  -----------------------\n";
@@ -2217,7 +2217,7 @@ void bsKaras()
 
 		   do
 		   {
-			system("CLS");
+			cls();
 			cout<<"  -----------------------      -------------\n";
 			cout<<" * Helmer the Blacksmith *     Gold: "<<gold<<"\n";
 			cout<<"  -----------------------      -------------\n";
@@ -2238,7 +2238,7 @@ void bsKaras()
 			{	
 				    if (charclass[i]==5)
 					{
-						system("CLS");
+						cls();
 						if(level[i]>=15)
 						{
 							if(weapon[i]==14)
@@ -2291,7 +2291,7 @@ void bsKaras()
 					}
 					else if(charclass[i]!=5)
 					{
-						system("CLS");
+						cls();
 						cout<<"BS: You can not purchase that item for that class.\n";
 						cout<<"\n";
 						cout<<"Press 1 to continue: ";
@@ -2303,7 +2303,7 @@ void bsKaras()
 			{	
 				    if (charclass[i]==5)
 					{
-						system("CLS");
+						cls();
 						if(level[i]>=15)
 						{
 							if(armor[i]==14)
@@ -2356,7 +2356,7 @@ void bsKaras()
 					}
 					else if(charclass[i]!=5)
 					{
-						system("CLS");
+						cls();
 						cout<<"BS: You can not purchase that item for that class.\n";
 						cout<<"\n";
 						cout<<"Press 1 to continue: ";
@@ -2387,7 +2387,7 @@ void bsTrevia()
 {
 	do
 	{
-	   system("CLS");
+	   cls();
 	   cout<<"  ------------------------\n";
 	   cout<<" * Richard the Blacksmith *\n";
 	   cout<<"  ------------------------\n";
@@ -2411,7 +2411,7 @@ void bsTrevia()
 
 		   do
 		   {
-			system("CLS");
+			cls();
 			cout<<"  ------------------------      -------------\n";
 			cout<<" * Richard the Blacksmith *     Gold: "<<gold<<"\n";
 			cout<<"  ------------------------      -------------\n";
@@ -2432,7 +2432,7 @@ void bsTrevia()
 			{	
 				    if (charclass[i]==2)
 					{
-						system("CLS");
+						cls();
 						if(level[i]>=15)
 						{
 							if(weapon[i]==5)
@@ -2485,7 +2485,7 @@ void bsTrevia()
 					}
 					else if(charclass[i]!=2)
 					{
-						system("CLS");
+						cls();
 						cout<<"BS: You can not purchase that item for that class.\n";
 						cout<<"\n";
 						cout<<"Press 1 to continue: ";
@@ -2497,7 +2497,7 @@ void bsTrevia()
 			{	
 				    if (charclass[i]==2)
 					{
-						system("CLS");
+						cls();
 						if(level[i]>=15)
 						{
 							if(armor[i]==5)
@@ -2550,7 +2550,7 @@ void bsTrevia()
 					}
 					else if(charclass[i]!=2)
 					{
-						system("CLS");
+						cls();
 						cout<<"BS: You can not purchase that item for that class.\n";
 						cout<<"\n";
 						cout<<"Press 1 to continue: ";
@@ -2580,7 +2580,7 @@ void bsRien()
 {
 	do
 	{
-	   system("CLS");
+	   cls();
 	   cout<<"  -----------------------\n";
 	   cout<<" * Mortus the Blacksmith *\n";
 	   cout<<"  -----------------------\n";
@@ -2603,7 +2603,7 @@ void bsRien()
 
 		   do
 		   {
-			system("CLS");
+			cls();
 			cout<<"  -----------------------      -------------\n";
 			cout<<" * Mortus the Blacksmith *     Gold: "<<gold<<"\n";
 			cout<<"  -----------------------      -------------\n";
@@ -2624,7 +2624,7 @@ void bsRien()
 			{	
 				    if (charclass[i]==1)
 					{
-						system("CLS");
+						cls();
 						if(level[i]>=15)
 						{
 							if(weapon[i]==2)
@@ -2677,7 +2677,7 @@ void bsRien()
 					}
 					else if(charclass[i]!=1)
 					{
-						system("CLS");
+						cls();
 						cout<<"BS: You can not purchase that item for that class.\n";
 						cout<<"\n";
 						cout<<"Press 1 to continue: ";
@@ -2689,7 +2689,7 @@ void bsRien()
 			{	
 				    if (charclass[i]==1)
 					{
-						system("CLS");
+						cls();
 						if(level[i]>=15)
 						{
 							if(armor[i]==2)
@@ -2742,7 +2742,7 @@ void bsRien()
 					}
 					else if(charclass[i]!=1)
 					{
-						system("CLS");
+						cls();
 						cout<<"BS: You can not purchase that item for that class.\n";
 						cout<<"\n";
 						cout<<"Press 1 to continue: ";
@@ -2771,7 +2771,7 @@ void bsBriex()
 {
 	do
 	{
-	   system("CLS");
+	   cls();
 	   cout<<"  ----------------------------\n";
 	   cout<<" * Mme Melinda the Blacksmith *\n";
 	   cout<<"  ----------------------------\n";
@@ -2794,7 +2794,7 @@ void bsBriex()
 
 		   do
 		   {
-			system("CLS");
+			cls();
 			cout<<"  ----------------------------      -------------\n";
 			cout<<" * Mme Melinda the Blacksmith *     Gold: "<<gold<<"\n";
 			cout<<"  ----------------------------      -------------\n";
@@ -2815,7 +2815,7 @@ void bsBriex()
 			{	
 				    if (charclass[i]==3)
 					{
-						system("CLS");
+						cls();
 						if(level[i]>=15)
 						{
 							if(weapon[i]==8)
@@ -2868,7 +2868,7 @@ void bsBriex()
 					}
 					else if(charclass[i]!=3)
 					{
-						system("CLS");
+						cls();
 						cout<<"BS: You can not purchase that item for that class.\n";
 						cout<<"\n";
 						cout<<"Press 1 to continue: ";
@@ -2880,7 +2880,7 @@ void bsBriex()
 			{	
 				    if (charclass[i]==3)
 					{
-						system("CLS");
+						cls();
 						if(level[i]>=15)
 						{
 							if(armor[i]==8)
@@ -2933,7 +2933,7 @@ void bsBriex()
 					}
 					else if(charclass[i]!=3)
 					{
-						system("CLS");
+						cls();
 						cout<<"BS: You can not purchase that item for that class.\n";
 						cout<<"\n";
 						cout<<"Press 1 to continue: ";
@@ -2961,7 +2961,7 @@ void bsUlm()
 {
 	do
 	{
-	   system("CLS");
+	   cls();
 	   cout<<"  ----------------------\n";
 	   cout<<" * Karla the Blacksmith *\n";
 	   cout<<"  ----------------------\n";
@@ -2984,7 +2984,7 @@ void bsUlm()
 
 		   do
 		   {
-			system("CLS");
+			cls();
 			cout<<"  ----------------------      -------------\n";
 			cout<<" * Karla the Blacksmith *     Gold: "<<gold<<"\n";
 			cout<<"  ----------------------      -------------\n";
@@ -3005,7 +3005,7 @@ void bsUlm()
 			{	
 				    if (charclass[i]==4)
 					{
-						system("CLS");
+						cls();
 						if(level[i]>=15)
 						{
 							if(weapon[i]==11)
@@ -3058,7 +3058,7 @@ void bsUlm()
 					}
 					else if(charclass[i]!=4)
 					{
-						system("CLS");
+						cls();
 						cout<<"BS: You can not purchase that item for that class.\n";
 						cout<<"\n";
 						cout<<"Press 1 to continue: ";
@@ -3070,7 +3070,7 @@ void bsUlm()
 			{	
 				    if (charclass[i]==4)
 					{
-						system("CLS");
+						cls();
 						if(level[i]>=15)
 						{
 							if(armor[i]==11)
@@ -3123,7 +3123,7 @@ void bsUlm()
 					}
 					else if(charclass[i]!=4)
 					{
-						system("CLS");
+						cls();
 						cout<<"BS: You can not purchase that item for that class.\n";
 						cout<<"\n";
 						cout<<"Press 1 to continue: ";
@@ -3189,14 +3189,14 @@ void charcreate()
 {
 	 do
 		{
-			system("CLS");
+			cls();
 			cout<<"Character Creation #"<<i<<" -Sex\n";
 			cout<<"--------------------------\n";
 			cout<<"1.)Male\n";
 			cout<<"2.)Female\n";
 			cout<<"Choice: ";
 			cin>>maleorfemale[i];
-			system("CLS");
+			cls();
 			cout<<"Character Creation #"<<i<<" -Class\n";
 			cout<<"----------------------------\n";
 			cout<<"1.)Fighter\n";
@@ -3207,14 +3207,14 @@ void charcreate()
 			cout<<"6.)Dark Mage\n";
 			cout<<"Choice: ";
 			cin>>charclass[i];
-			system("CLS");
+			cls();
 			cout<<"Character Creation #"<<i<<" -Name\n";
 			cout<<"---------------------------\n";
 			cout<<"Enter your Name: ";
 			cin.ignore(81,'\n');
 			cin.get(charname[i],21);
 			cin.ignore(81,'\n');
-			system("CLS");
+			cls();
 			cout<<"Character Creation #"<<i<<" -Finalize\n";
 			cout<<"-------------------------------\n";
 			cout<<"Name: "<<charname[i]<<'\n';
@@ -3243,7 +3243,7 @@ void charcreate()
 			cout<<"\n";
 			cout<<"Press 1 if correct or Press 2 to restart: ";
 			cin>>charcorrect;
-			system("CLS");
+			cls();
 		}
 		while(charcorrect!=1);
 }
@@ -3278,7 +3278,7 @@ void newgamestory()
 		cout<<"\n";
 		cout<<"Press 1 to continue: ";
 		cin>>one;
-		system("CLS");
+		cls();
 		////////BREAK IN STORY 
 
 
@@ -3309,7 +3309,7 @@ void newgamestory()
 			cout<<"\n";
 			cout<<"Press 1 to continue: ";
 			cin>>one;
-			system("CLS");
+			cls();
 			
 			cout<<charname[2]<<": 'Thank you so much.'\n";
 			cout<<"Man: 'It is no problem for a soldier, fighting for our cause.'\n";
@@ -3332,7 +3332,7 @@ void newgamestory()
 			cout<<"\n";
 			cout<<"Press 1 to continue: ";
 			cin>>one;
-			system("CLS");
+			cls();
 
 			cout<<"You come around from the corner.\n";
 			cout<<"\n";
@@ -3347,13 +3347,13 @@ void newgamestory()
 			cout<<"\n";
 			cout<<"Press 1 to go to Karas and start your epic journey: ";
 			cin>>one;
-			system("CLS");
+			cls();
 			/////////////////SEND TO OVERWORLD
 }
 
 void karasstory()
 {
-	system("CLS");
+	cls();
 			cout<<"Entering Karas\n";
 			cout<<"\n";
 			cout<<charname[2]<<": 'We have arrived in beautiful Karas, my hometown.'\n";
@@ -3372,7 +3372,7 @@ void karasstory()
 			cout<<"\n";
 			cout<<"Press 1 to continue: ";
 			cin>>one;
-			system("CLS");
+			cls();
 			cout<<"Duke Vlad: 'Welcome "<<charname[2]<<" I see your journey was successfull.'\n";
 			cout<<charname[2]<<": 'Yes it was, I have slain Arthur and returned with "<<charname[1]<<".'\n";
 			if(maleorfemale[1]==1)
@@ -3397,7 +3397,7 @@ void karasstory()
 			cout<<"\n";
 			cout<<"Press 1 to continue: ";
 			cin>>one;
-			system("CLS");
+			cls();
 			cout<<charname[1]<<": 'I don't remember any of this, but I thank thee none the less.'\n";
 			cout<<charname[2]<<": 'It is important that you understand that they were going to kill you.'\n";
 			cout<<"Duke Vlad: 'That is correct, and you are welcome.\n";
@@ -3415,7 +3415,7 @@ void karasstory()
 			cout<<"\n";
 			cout<<"Press 1 to continue: ";
 			cin>>one;
-			system("CLS");
+			cls();
 			cout<<charname[1]<<": 'Let thy deed be done. I have requests however.'\n";
 			cout<<"Duke Vlad: 'Of course what will you need?'\n";
 			cout<<charname[1]<<": 'First I will need a new set of clothing'\n";
@@ -3606,7 +3606,7 @@ void bspurchase()
 			{	
 				    if (charclass[i]==1)
 					{
-						system("CLS");
+						cls();
 						if(weapon[i]==1)
 						{
 							cout<<"BS: You already have this weapon equiped.\n";
@@ -3650,7 +3650,7 @@ void bspurchase()
 					}
 					else if(charclass[i]!=1)
 					{
-						system("CLS");
+						cls();
 						cout<<"BS: You can not purchase that item for that class.\n";
 						cout<<"\n";
 						cout<<"Press 1 to continue: ";
@@ -3663,7 +3663,7 @@ void bspurchase()
 			{	
 				    if (charclass[i]==2)
 					{
-						system("CLS");
+						cls();
 						if(weapon[i]==4)
 						{
 							cout<<"BS: You already have this weapon equiped.\n";
@@ -3705,7 +3705,7 @@ void bspurchase()
 					}
 					else if(charclass[i]!=2)
 					{
-						system("CLS");
+						cls();
 						cout<<"BS: You can not purchase that item for that class.\n";
 						cout<<"\n";
 						cout<<"Press 1 to continue: ";
@@ -3716,7 +3716,7 @@ void bspurchase()
 			{	
 				    if (charclass[i]==3)
 					{
-						system("CLS");
+						cls();
 						if(weapon[i]==7)
 						{
 							cout<<"BS: You already have this weapon equiped.\n";
@@ -3758,7 +3758,7 @@ void bspurchase()
 					}
 					else if(charclass[i]!=3)
 					{
-						system("CLS");
+						cls();
 						cout<<"BS: You can not purchase that item for that class.\n";
 						cout<<"\n";
 						cout<<"Press 1 to continue: ";
@@ -3770,7 +3770,7 @@ void bspurchase()
 			{	
 				    if (charclass[i]==4)
 					{
-						system("CLS");
+						cls();
 						if(weapon[i]==10)
 						{
 							cout<<"BS: You already have this weapon equiped.\n";
@@ -3812,7 +3812,7 @@ void bspurchase()
 					}
 					else if(charclass[i]!=4)
 					{
-						system("CLS");
+						cls();
 						cout<<"BS: You can not purchase that item for that class.\n";
 						cout<<"\n";
 						cout<<"Press 1 to continue: ";
@@ -3825,7 +3825,7 @@ void bspurchase()
 			{	
 				    if (charclass[i]==5)
 					{
-						system("CLS");
+						cls();
 						if(weapon[i]==13)
 						{
 							cout<<"BS: You already have this weapon equiped.\n";
@@ -3867,7 +3867,7 @@ void bspurchase()
 					}
 					else if(charclass[i]!=5)
 					{
-						system("CLS");
+						cls();
 						cout<<"BS: You can not purchase that item for that class.\n";
 						cout<<"\n";
 						cout<<"Press 1 to continue: ";
@@ -3880,7 +3880,7 @@ void bspurchase()
 			{	
 				    if (charclass[i]==6)
 					{
-						system("CLS");
+						cls();
 						if(weapon[i]==16)
 						{
 							cout<<"BS: You already have this weapon equiped.\n";
@@ -3922,7 +3922,7 @@ void bspurchase()
 					}
 					else if(charclass[i]!=6)
 					{
-						system("CLS");
+						cls();
 						cout<<"BS: You can not purchase that item for that class.\n";
 						cout<<"\n";
 						cout<<"Press 1 to continue: ";
@@ -3936,7 +3936,7 @@ void bspurchase()
 			{	
 				    if (charclass[i]==1)
 					{
-						system("CLS");
+						cls();
 						if(armor[i]==1)
 						{
 							cout<<"BS: You already have this armor equiped.\n";
@@ -3978,7 +3978,7 @@ void bspurchase()
 					}
 					else if(charclass[i]!=1)
 					{
-						system("CLS");
+						cls();
 						cout<<"BS: You can not purchase that item for that class.\n";
 						cout<<"\n";
 						cout<<"Press 1 to continue: ";
@@ -3990,7 +3990,7 @@ void bspurchase()
 			{	
 				    if (charclass[i]==2)
 					{
-						system("CLS");
+						cls();
 						if(armor[i]==4)
 						{
 							cout<<"BS: You already have this armor equiped.\n";
@@ -4032,7 +4032,7 @@ void bspurchase()
 					}
 					else if(charclass[i]!=2)
 					{
-						system("CLS");
+						cls();
 						cout<<"BS: You can not purchase that item for that class.\n";
 						cout<<"\n";
 						cout<<"Press 1 to continue: ";
@@ -4046,7 +4046,7 @@ void bspurchase()
 			{	
 				    if (charclass[i]==3)
 					{
-						system("CLS");
+						cls();
 						if(armor[i]==7)
 						{
 							cout<<"BS: You already have this armor equiped.\n";
@@ -4088,7 +4088,7 @@ void bspurchase()
 					}
 					else if(charclass[i]!=3)
 					{
-						system("CLS");
+						cls();
 						cout<<"BS: You can not purchase that item for that class.\n";
 						cout<<"\n";
 						cout<<"Press 1 to continue: ";
@@ -4100,7 +4100,7 @@ void bspurchase()
 			{	
 				    if (charclass[i]==4)
 					{
-						system("CLS");
+						cls();
 						if(armor[i]==10)
 						{
 							cout<<"BS: You already have this armor equiped.\n";
@@ -4142,7 +4142,7 @@ void bspurchase()
 					}
 					else if(charclass[i]!=4)
 					{
-						system("CLS");
+						cls();
 						cout<<"BS: You can not purchase that item for that class.\n";
 						cout<<"\n";
 						cout<<"Press 1 to continue: ";
@@ -4155,7 +4155,7 @@ void bspurchase()
 			{	
 				    if (charclass[i]==5)
 					{
-						system("CLS");
+						cls();
 						if(armor[i]==13)
 						{
 							cout<<"BS: You already have this armor equiped.\n";
@@ -4197,7 +4197,7 @@ void bspurchase()
 					}
 					else if(charclass[i]!=5)
 					{
-						system("CLS");
+						cls();
 						cout<<"BS: You can not purchase that item for that class.\n";
 						cout<<"\n";
 						cout<<"Press 1 to continue: ";
@@ -4208,7 +4208,7 @@ void bspurchase()
 			{	
 				    if (charclass[i]==6)
 					{
-						system("CLS");
+						cls();
 						if(armor[i]==16)
 						{
 							cout<<"BS: You already have this armor equiped.\n";
@@ -4250,7 +4250,7 @@ void bspurchase()
 					}
 					else if(charclass[i]!=6)
 					{
-						system("CLS");
+						cls();
 						cout<<"BS: You can not purchase that item for that class.\n";
 						cout<<"\n";
 						cout<<"Press 1 to continue: ";
@@ -4266,7 +4266,7 @@ void status()
 	{
 		statcalc();
 	}
-	system("CLS");
+	cls();
 	cout << "Character Stats \n"
 	     << setw(14) << "Character: " << setw(21) << charname[1] << setw(21) << charname[2] << setw(21) << charname[3] << '\n'
 		 << setw(14) << "Class: " << setw(21) << classname[charclass[1]] << setw(21) << classname[charclass[2]] << setw(21) << classname[charclass[3]] << '\n'
@@ -4298,7 +4298,7 @@ void status()
 void bscharselect()
 {
 
-		   system("CLS");
+		   cls();
 		   cout<<" ------------------\n";
 		   cout<<"* Character Choice *\n";
 		   cout<<" ------------------\n";
@@ -4382,7 +4382,7 @@ void bscharselect()
 void dojocharselect()
 {
 
-		   system("CLS");
+		   cls();
 		   
 		   cout<<"1.)"<<charname[1];
 		   if((charclass[1]==1) || (charclass[1]==7) || (charclass[1]== 13))
@@ -4516,7 +4516,7 @@ void battle()
 				}
 				do
 				{
-					system("CLS");
+					cls();
 					battlescreen();
 					cout << "Options \n"
 						 << "------------------\n"
@@ -4532,7 +4532,7 @@ void battle()
 						cin >> battleoption;
 					}
 					while((battleoption < 1) || (battleoption > 6));
-					system("CLS");
+					cls();
 					battlescreen();
 					switch(battleoption)
 					{
@@ -4582,7 +4582,7 @@ void battle()
 						magicuse();
 						if(spellnum != 0)
 						{
-							system("CLS");
+							cls();
 							battlescreen();
 							cout << "Select a Target: \n";
 							if(((spellnum % 8) == 1) || ((spellnum % 8) == 3) || ((spellnum % 8) == 4) || ((spellnum % 8) == 7))
@@ -4739,7 +4739,7 @@ void battle()
 	while((eremain != 0) && (cremain != 0));
 	
 	//End of Battle Messages
-	system("CLS");
+	cls();
 	//Victory boss check to reset dspecial
 	if((eremain == 0) && (bosscheck == 1))
 	{
@@ -4799,7 +4799,7 @@ void battle()
 
 void battlescreen()
 {
-	system("CLS");
+	cls();
 	//Party
 	cout << "-------------------------------------------------------------------------------\n"
 	     << "|" << setw(12) << "Character: " << setw(21) << charname[1] << setw(21) << charname[2] << setw(21) << charname[3] << setw(3) << "|" << '\n'
@@ -4815,7 +4815,7 @@ void battlescreen()
 
 void estatus()
 {
-	system("CLS");
+	cls();
 	cout << "Monster Statistics \n"
 	     << setw(14) << "Enemy: " << setw(21) << tename[4] << setw(21) << tename[5] << setw(21) << tename[6] << '\n'
 		 << setw(14) << "Level: " << setw(21) << televel[4] << setw(21) << televel[5] << setw(21) << televel[6] << '\n'
@@ -5433,7 +5433,7 @@ void magicuse()
 
 void spelleffect()
 {
-	system("CLS");
+	cls();
 	battlescreen();
 	//Level I Spells	
 	//Heal I
@@ -5796,7 +5796,7 @@ void itemuse()
 	while((itemchoice < 0) || (itemchoice > 7) || (itemnum[itemchoice] <= 0));
 	if(itemchoice != 0)
 	{
-		system("CLS");
+		cls();
 		battlescreen();
 		turn = 1;
 		cout << "Select a Target: \n";
@@ -5808,7 +5808,7 @@ void itemuse()
 			cin >> target;
 		}
 		while(((target < 1) || (target > 3)));
-		system("CLS");
+		cls();
 		battlescreen();
 		switch(itemchoice)
 		{
@@ -5944,7 +5944,7 @@ void shop()
 {
 	do
 	{
-	 system("CLS");
+	 cls();
 	 if(towncheck==1)
 	 {
 		 cout<<"  ------------------------      -------------\n";
@@ -6299,7 +6299,7 @@ void dojo()
 		}
 	do
 	{
-		system("CLS");
+		cls();
 		dojoname();
 		cout<<"Master: I will train you to be faster, stronger, better.\n";
 		cout<<"\n";
@@ -6311,7 +6311,7 @@ void dojo()
 		{
 			if(dojoclass3==charclass[dojochar])
 			{
-				system("CLS");
+				cls();
 				dojoname();
 				cout<<"Master: You have reached your highest rank.\n";
 				cout<<"Master: Now get out of here, and good luck you your journey.\n";
@@ -6323,7 +6323,7 @@ void dojo()
 			
 			else if(dojoclass2==charclass[dojochar])
 			{	
-				system("CLS");
+				cls();
 				dojoname();
 				cout<<"Master: You are weak. You must learn the ways of the "<<classname[dojoclass3]<<".\n";
 				cout<<"Master: I will train you, however it will cost you a fee.\n";
@@ -6340,7 +6340,7 @@ void dojo()
 				{
 					if(level[dojochar]<30)
 					{
-						system("CLS");
+						cls();
 						dojoname();
 						cout<<"Master: You are not experienced enough for my training.\n";
 						cout<<"Master: Come back when you have fought hard and leveled up.\n";
@@ -6361,7 +6361,7 @@ void dojo()
 						}
 						else if(gold>=700)
 						{
-							system("CLS");
+							cls();
 							dojoname();
 							cout<<"*After days of long training the time has come.\n";
 							cout<<"\n";
@@ -6382,7 +6382,7 @@ void dojo()
 
 			else if(dojoclass==charclass[dojochar])
 			{	
-				system("CLS");
+				cls();
 				dojoname();
 				cout<<"Master: You are weak. You must learn the ways of the "<<classname[dojoclass2]<<".\n";
 				cout<<"Master: I will train you, however it will cost you a fee.\n";
@@ -6399,7 +6399,7 @@ void dojo()
 				{
 					if(level[dojochar]<15)
 					{
-						system("CLS");
+						cls();
 						dojoname();
 						cout<<"Master: You are not experienced enough for my training.\n";
 						cout<<"Master: Come back when you have fought hard and leveled up.\n";
@@ -6420,7 +6420,7 @@ void dojo()
 						}
 						else if(gold>=700)
 						{
-							system("CLS");
+							cls();
 							dojoname();
 							cout<<"*After days of long training the time has come.\n";
 							cout<<"\n";
@@ -6500,7 +6500,7 @@ void church()
 {
 	do
 	{
-	 system("CLS");
+	 cls();
 	 if(towncheck==1)
 	 {
 		 cout<<"  ----------------------------      -------------\n";
@@ -6594,9 +6594,9 @@ void dungeonmain()
 {
 	do
 	{
-		system("CLS");
+		cls();
 		//Main Dungeon Screen
-		system("CLS");
+		cls();
 		cout << dungeonname[dungeonnum] << '\n'
 			 << "---------------\n"
 		     << "X Position: " << dungeonx << '\n'
@@ -6739,7 +6739,7 @@ void dungeonmain()
 
 void search()
 {
-	system("CLS");
+	cls();
 	cout << "You carefully search the area... \n";
 	//Entrance Location
 	if((dungeonx == dexitx[dungeonnum]) && (dungeony == dexity[dungeonnum]))
@@ -7168,12 +7168,12 @@ void search()
 	}
 	cout << "Press one to continue: ";
 	cin >> one;
-	system("CLS");
+	cls();
 }
 
 void healmagicuse()
 {
-	system("CLS");
+	cls();
 	cout << "-------------------------------------------------------------------------------\n"
 	     << "|" << setw(12) << "Character: " << setw(21) << charname[1] << setw(21) << charname[2] << setw(21) << charname[3] << setw(3) << "|" << '\n'
 		 << "|" << setw(12) << "HP: " << setw(17) << hp[1] << "/" << setw(3) << uchpmax[1] << setw(17) << hp[2] << "/" << setw(3) << uchpmax[2] << setw(17) << hp[3] << "/" << setw(3) << uchpmax[3]<< setw(3) << "|" << '\n'
@@ -7443,13 +7443,13 @@ void healmagicuse()
 	}
 	cout << "Press one to continue: ";
 	cin >> one;
-	system("CLS");
+	cls();
 }
 
 //Dungeons
 void MallowMarsh()
 {
-	system("CLS");
+	cls();
 	cout << "You have entered Mallow Marsh. \n";
 	dungeonnum = 1;
 	dungeonx = dexitx[dungeonnum];
@@ -7463,7 +7463,7 @@ void MallowMarsh()
 
 void HiddenEverglades()
 {
-	system("CLS");
+	cls();
 	cout << "You have entered the Hidden Everglades. \n";
 	dungeonnum = 2;
 	dungeonx = dexitx[dungeonnum];
@@ -7477,7 +7477,7 @@ void HiddenEverglades()
 
 void PathoftheForgotten()
 {
-	system("CLS");
+	cls();
 	cout << "You have entered the Path of the Forgotten. \n";
 	dungeonnum = 3;
 	dungeonx = dexitx[dungeonnum];
@@ -7491,7 +7491,7 @@ void PathoftheForgotten()
 
 void CavernoftheLost()
 {
-	system("CLS");
+	cls();
 	cout << "You have entered the Cavern of the Lost. \n";
 	dungeonnum = 4;
 	dungeonx = dexitx[dungeonnum];
@@ -7505,7 +7505,7 @@ void CavernoftheLost()
 
 void HallsoftheDead()
 {
-	system("CLS");
+	cls();
 	cout << "You have entered the Halls of the Dead. \n";
 	dungeonnum = 5;
 	dungeonx = dexitx[dungeonnum];
@@ -7519,7 +7519,7 @@ void HallsoftheDead()
 
 void GatewaytotheNW()
 {
-	system("CLS");
+	cls();
 	cout << "You have entered the Gateway to the Netherworld. \n";
 	dungeonnum = 6;
 	dungeonx = dexitx[dungeonnum];
@@ -7533,7 +7533,7 @@ void GatewaytotheNW()
 
 void BoundlessDesert()
 {
-	system("CLS");
+	cls();
 	cout << "You have entered the Boundless Desert. \n";
 	dungeonnum = 7;
 	dungeonx = dexitx[dungeonnum];
@@ -7547,7 +7547,7 @@ void BoundlessDesert()
 
 void TombofTslor()
 {
-	system("CLS");
+	cls();
 	cout << "You have entered Tomb of Tslor. \n";
 	dungeonnum = 8;
 	dungeonx = dexitx[dungeonnum];
@@ -7561,7 +7561,7 @@ void TombofTslor()
 
 void EastTrails()
 {
-	system("CLS");
+	cls();
 	cout << "You have entered the East Trails. \n";
 	dungeonnum = 9;
 	dungeonx = dexitx[dungeonnum];
@@ -7575,7 +7575,7 @@ void EastTrails()
 
 void Mountainside()
 {
-	system("CLS");
+	cls();
 	cout << "You have entered the Mountainside. \n";
 	dungeonnum = 10;
 	dungeonx = dexitx[dungeonnum];
@@ -7589,7 +7589,7 @@ void Mountainside()
 
 void ForestofDarkness()
 {
-	system("CLS");
+	cls();
 	cout << "You have entered the Forest of Darkness. \n";
 	dungeonnum = 11;
 	dungeonx = dexitx[dungeonnum];
@@ -7603,7 +7603,7 @@ void ForestofDarkness()
 
 void FieldofDeath()
 {
-	system("CLS");
+	cls();
 	cout << "You have entered the Field of Death. \n";
 	dungeonnum = 12;
 	dungeonx = dexitx[dungeonnum];
@@ -7796,4 +7796,13 @@ void emagic()
 			i = enemycount + 2;
 		}
 	}
+}
+
+void cls()
+{
+#ifdef _WIN32
+	system("cls");
+#else
+	system("clear");
+#endif
 }
