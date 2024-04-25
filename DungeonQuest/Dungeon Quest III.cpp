@@ -1,8 +1,8 @@
 //Dungeon Quest III: Torn Dreams
-//James Montemagno & Jason Sauppé
+//James Montemagno & Jason Sauppï¿½
 //Date Started: January 31st 2005 
 //Date Finished: May 26th 2005
-//Copyright 2005 PM Media, Code Warriors, James Montemagno, Jason Sauppé; All rights Reserved.
+//Copyright 2005 PM Media, Code Warriors, James Montemagno, Jason Sauppï¿½; All rights Reserved.
 #include <iostream>
 using namespace std;
 #include <cmath>
@@ -52,7 +52,7 @@ char weaponname[19][21] = {"Unarmed", "Long Sword", "Great Sword", "Excalibur", 
 char armorname[19][21] = {"Unarmored", "Steel Plate", "Full Plate Mail", "Adamantium Armor", "Raw Hide Suit", "Hard Leather", "Dragonscale Armor", "Chain Mail", "Silver Mail", "Platinum Armor", "Trainer's Suit", "Ancient Robe", "Minazuki", "Leather Armor", "Studded Leather", "Armor of Shadows", "Mage's Robe", "Elder's Cloak", "Mythril Mesh"};
 
 // bc = Base Class
-int bchp[19], bcatp[19], bcdfp[19], bcmp[19], bcmatp[19], bcmdfp[19], bcspd[19];
+int bchp[19], bcatp[19], bcdfp[19], bcmap[19], bcmatp[19], bcmdfp[19], bcspd[19];
 
 //Items
 //1 = Healing Potion	2 = Extra Healing Potion	3 = Elixir of Healing
@@ -3469,7 +3469,7 @@ void basesetup()
 		cfile >> bchp[i];
 		cfile >> bcatp[i];
 		cfile >> bcdfp[i];
-		cfile >> bcmp[i];
+		cfile >> bcmap[i];
 		cfile >> bcmatp[i];
 		cfile >> bcmdfp[i];
 		cfile >> bcspd[i];
@@ -3555,7 +3555,7 @@ void statcalc()
 	uchpmax[i] = bchp[charclass[i]] * level[i];
 	ucatp[i] = bcatp[charclass[i]] * level[i]; 
 	ucdfp[i] = bcdfp[charclass[i]] * level[i];
-	ucmpmax[i] = bcmp[charclass[i]] * level[i];
+	ucmpmax[i] = bcmap[charclass[i]] * level[i];
 	ucmatp[i] = bcmatp[charclass[i]] * level[i];
 	ucmdfp[i] = bcmdfp[charclass[i]] * level[i];
 	ucspd[i] = bcspd[charclass[i]];
